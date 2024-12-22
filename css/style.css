@@ -1,0 +1,191 @@
+body {
+    min-height: 100vh;
+    background: #000 url(../img/call\ of\ duty.jpg) center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3310574229691877) 0%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    z-index: 1;
+
+}
+
+.container {
+    position: relative;
+    z-index: 99;
+    width: 90vw;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .login {
+
+    width: 100%;
+    max-width: 400px;
+    order: -1;
+    padding: 30px 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.container .login .txts {
+    padding: 10px 10px;
+}
+
+.container .login .txts h2 {
+    font: bold 2em "Montserrat";
+    padding: 10px 0;
+}
+
+.container .login .txts span {
+    color: #86878F;
+    font: normal 1em "Open Sans";
+}
+
+.container .login .txts a {
+    color: #619DC7;
+    font: normal 1em "Open Sans";
+}
+
+.container .login .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container .login .inputs {
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.container .login .inputs .email p {
+    font: normal .7em "Open Sans";
+    color: #86878F;
+}
+
+.container .login .inputs .email input {
+    width: 90%;
+    padding: 15px 10px;
+    background-color: #f1edec;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.container .login .inputs .password p {
+    font: normal .7em "Open Sans";
+    color: #86878F;
+}
+
+.container .login .inputs .password input {
+    background-color: #f1edec;
+}
+
+.btn {
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.container .login .inputs .continue {
+    background-color: #6c5dd2;
+    text-align: center;
+    color: #fff;
+}
+
+.container .login .connect p {
+    margin-bottom: 15px;
+    color: #86878F;
+    font: normal .7em "Open Sans";
+}
+
+.container .login .connect a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    background-color: #3f8cfe;
+}
+
+.container .unity .logo {
+    margin-bottom: 10px;
+}
+
+.container .unity .txt {
+    margin: 10px 0;
+    color: #fff;
+    font: normal 1em "Open Sans";
+}
+
+.container .unity .games .card {
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: #00000080;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .unity .games .card .img img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.card .subtitles {
+    padding: 10px;
+}
+
+.card .subtitles h5 {
+    color: #fff;
+    padding: 5px 0;
+    font: bold 1em "Open Sans";
+}
+
+.card .subtitles p {
+    color: #c8c7c7;
+    padding: 5px 0;
+}
+
+.card .subtitles p i {
+    font-size: 10px;
+    margin: 0 5px 0 0;
+    color: #a67430;
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container .login {
+        min-width: 400px;
+    }
+
+    .container .unity .games .card {
+        min-width: 300px;
+    }
+
+    .container .login {
+        order: 1;
+    }
+}
